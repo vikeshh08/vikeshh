@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffecf2;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.apology-text {
+    color: red;
+    font-size: 24px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.slides img {
+    width: 100%;
+    display: none;
+}
+
+.message {
+    font-size: 18px;
+    color: #555;
+    animation: textBlink 1.5s infinite;
+}
+
+button {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d63a52;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes textBlink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
